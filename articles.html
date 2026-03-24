@@ -15,6 +15,46 @@
         .articles-header h1 { font-size: clamp(2rem, 4vw, 3rem); margin-bottom: 1rem; }
         .articles-header p { color: var(--text-light); font-size: 1rem; line-height: 1.8; }
         .articles-actions { margin-top: 1.5rem; }
+        .articles-toolbar {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            gap: .75rem;
+            margin: 0 0 1.75rem;
+        }
+        .articles-sort-label {
+            font-size: .82rem;
+            font-weight: 700;
+            letter-spacing: .08em;
+            text-transform: uppercase;
+            color: var(--text-light);
+        }
+        .articles-sort-select {
+            min-width: 220px;
+            padding: .78rem 1rem;
+            border: 1.5px solid var(--border);
+            border-radius: 12px;
+            font-size: .92rem;
+            font-family: inherit;
+            color: var(--text);
+            background: var(--bg);
+            outline: none;
+            transition: border-color .15s, box-shadow .15s;
+        }
+        .articles-sort-select:focus {
+            border-color: var(--primary);
+            box-shadow: 0 0 0 4px rgba(29,127,91,.08);
+        }
+        @media (max-width: 640px) {
+            .articles-toolbar {
+                flex-direction: column;
+                align-items: stretch;
+            }
+            .articles-sort-select {
+                min-width: 0;
+                width: 100%;
+            }
+        }
     </style>
 </head>
 <body>
@@ -40,8 +80,18 @@
                     <p>Explore Project Urvi's full collection of articles covering sustainability, climate change, circular economy, biodiversity, environmental risk, and global systems.</p>
                 </div>
 
-                <div class="insights-grid">
-                    <article class="insight-card">
+                <div class="articles-toolbar">
+                    <label class="articles-sort-label" for="articleSort">Sort by</label>
+                    <select id="articleSort" class="articles-sort-select" aria-label="Sort articles">
+                        <option value="date-desc">Date: Newest first</option>
+                        <option value="date-asc">Date: Oldest first</option>
+                        <option value="name-asc">Name: A to Z</option>
+                        <option value="name-desc">Name: Z to A</option>
+                    </select>
+                </div>
+
+                <div class="insights-grid" id="articlesGrid">
+                    <article class="insight-card" data-title="Global Heatwaves and Lost Work Hours: A 2025 Snapshot" data-date="2026-04-01">
                         <div class="insight-meta">
                             <span class="insight-tag">Global Risk</span>
                             <span class="insight-date">April 2026</span>
@@ -50,7 +100,7 @@
                         <p>A global overview of intensifying heatwaves, lost labour hours, and the growing economic consequences of extreme heat.</p>
                         <a href="insights/global-heatwaves-work-hours-2025.html" class="insight-link">Read article &#8599;</a>
                     </article>
-                    <article class="insight-card">
+                    <article class="insight-card" data-title="Water Stress and Urban Risk: Which Cities Face the Sharpest Squeeze by 2030?" data-date="2026-04-01">
                         <div class="insight-meta">
                             <span class="insight-tag">Global Resource Risk</span>
                             <span class="insight-date">April 2026</span>
@@ -59,7 +109,7 @@
                         <p>A comparative view of urban water stress, infrastructure pressure, and which major cities face the most acute supply constraints.</p>
                         <a href="insights/global-water-stress-cities-2030.html" class="insight-link">Read article &#8599;</a>
                     </article>
-                    <article class="insight-card">
+                    <article class="insight-card" data-title="The Global E-Waste Surge: What 2024 Tells Us" data-date="2026-03-01">
                         <div class="insight-meta">
                             <span class="insight-tag">Circular Economy</span>
                             <span class="insight-date">March 2026</span>
@@ -68,7 +118,7 @@
                         <p>An overview of global electronic waste growth, formal recycling gaps, and where circular electronics systems remain weakest.</p>
                         <a href="insights/global-e-waste-surge-2024.html" class="insight-link">Read article &#8599;</a>
                     </article>
-                    <article class="insight-card">
+                    <article class="insight-card" data-title="Plastic Pollution in India's Rivers: A 2025 Data Snapshot" data-date="2026-03-01">
                         <div class="insight-meta">
                             <span class="insight-tag">Data &amp; Visualisation</span>
                             <span class="insight-date">March 2026</span>
@@ -77,7 +127,7 @@
                         <p>An analysis of plastic load data across 14 major Indian river systems in 2025, with plotted hotspot comparisons and seasonal variation insights.</p>
                         <a href="insights/plastic-rivers-india-2025.html" class="insight-link">Read article &#8599;</a>
                     </article>
-                    <article class="insight-card">
+                    <article class="insight-card" data-title="Visualising Carbon Emissions by Sector: South Asia 2024" data-date="2026-02-01">
                         <div class="insight-meta">
                             <span class="insight-tag">Visualisation</span>
                             <span class="insight-date">February 2026</span>
@@ -86,7 +136,7 @@
                         <p>A sector-by-sector breakdown of carbon emissions across South Asia in 2024, with comparative charts showing which industries are accelerating and which are improving.</p>
                         <a href="insights/carbon-emissions-south-asia-2024.html" class="insight-link">Read article &#8599;</a>
                     </article>
-                    <article class="insight-card">
+                    <article class="insight-card" data-title="Global Methane Abatement: Where the Fastest Cuts Could Come From" data-date="2026-02-01">
                         <div class="insight-meta">
                             <span class="insight-tag">Climate Policy</span>
                             <span class="insight-date">February 2026</span>
@@ -95,7 +145,7 @@
                         <p>A data-led look at methane emissions, sector-level abatement potential, and why methane remains a high-leverage climate priority.</p>
                         <a href="insights/global-methane-abatement-2025.html" class="insight-link">Read article &#8599;</a>
                     </article>
-                    <article class="insight-card">
+                    <article class="insight-card" data-title="Tropical Deforestation Frontiers in 2024" data-date="2026-03-01">
                         <div class="insight-meta">
                             <span class="insight-tag">Biodiversity</span>
                             <span class="insight-date">March 2026</span>
@@ -104,7 +154,7 @@
                         <p>A global perspective on tropical deforestation hotspots, land-use pressure, and which frontier regions remain most exposed.</p>
                         <a href="insights/tropical-deforestation-frontiers-2024.html" class="insight-link">Read article &#8599;</a>
                     </article>
-                    <article class="insight-card">
+                    <article class="insight-card" data-title="The ESG Reporting Gap: What Companies in South Asia Are Missing" data-date="2026-01-01">
                         <div class="insight-meta">
                             <span class="insight-tag">Research Finding</span>
                             <span class="insight-date">January 2026</span>
@@ -113,7 +163,7 @@
                         <p>Our review of 200+ corporate ESG disclosures reveals systemic gaps in supply chain transparency, Scope 3 emissions, and social impact measurement across South Asian companies.</p>
                         <a href="insights/esg-reporting-gap-south-asia.html" class="insight-link">Read article &#8599;</a>
                     </article>
-                    <article class="insight-card">
+                    <article class="insight-card" data-title="Ocean Heat and Coral Bleaching in 2024" data-date="2026-02-01">
                         <div class="insight-meta">
                             <span class="insight-tag">Climate Systems</span>
                             <span class="insight-date">February 2026</span>
@@ -122,7 +172,7 @@
                         <p>A global overview of ocean heat anomalies, coral bleaching exposure, and what 2024 revealed about marine climate risk.</p>
                         <a href="insights/ocean-heat-coral-bleaching-2024.html" class="insight-link">Read article &#8599;</a>
                     </article>
-                    <article class="insight-card">
+                    <article class="insight-card" data-title="Temperature Anomalies in South Asia: A Decade of Change (2015-2025)" data-date="2025-12-01">
                         <div class="insight-meta">
                             <span class="insight-tag">Climate Data</span>
                             <span class="insight-date">December 2025</span>
@@ -148,5 +198,6 @@
             <p class="footer-copy">&#169; 2026 Project Urvi. Building a safer and more sustainable world.</p>
         </div>
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>

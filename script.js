@@ -221,3 +221,42 @@ document.addEventListener('keydown', function (e) {
 
 // --- Lucide icons ---
 if (typeof lucide !== 'undefined') lucide.createIcons();
+
+// --- Articles sorting ---
+const articleSort = document.getElementById('articleSort');
+const articlesGrid = document.getElementById('articlesGrid');
+
+if (articleSort && articlesGrid) {
+    const getSortedArticles = function (sortValue) {
+        const articles = Array.from(articlesGrid.querySelectorAll('.insight-card'));
+
+        return articles.sort(function (a, b) {
+            const titleA = (a.dataset.title || '').toLowerCase();
+            const titleB = (b.dataset.title || '').toLowerCase();
+            const dateA = new Date(a.dataset.date || '1970-01-01').getTime();
+            const dateB = new Date(b.dataset.date || '1970-01-01').getTime();
+
+            switch (sortValue) {
+                case 'name-asc':
+                    return titleA.localeCompare(titleB);
+                case 'name-desc':
+                    return titleB.localeCompare(titleA);
+                case 'date-asc':
+                    return dateA - dateB;
+                case 'date-desc':
+                default:
+                    return dateB - dateA;
+            }
+        });
+    };
+
+    const renderSortedArticles = function () {
+        const sortedArticles = getSortedArticles(articleSort.value);
+        sortedArticles.forEach(function (article) {
+            articlesGrid.appendChild(article);
+        });
+    };
+
+    articleSort.addEventListener('change', renderSortedArticles);
+    renderSortedArticles();
+}
