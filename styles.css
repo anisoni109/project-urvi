@@ -1280,6 +1280,7 @@ h4 { font-size: 1.05rem; font-weight: 700; }
     .insights-grid { grid-template-columns: repeat(2, 1fr); }
     .service-grid { grid-template-columns: repeat(2, 1fr); }
     .pub-grid { grid-template-columns: 1fr; }
+    #invest .invest-grid { grid-template-columns: 1fr !important; }
 }
 
 @media (max-width: 860px) {
@@ -1302,7 +1303,6 @@ h4 { font-size: 1.05rem; font-weight: 700; }
     .nav-toggle { display: flex; }
     .mission-grid { grid-template-columns: 1fr; gap: 2.5rem; }
     .initiative-grid { grid-template-columns: 1fr; }
-    .invest-grid { grid-template-columns: 1fr; }
     .init-tabs { flex-direction: column; }
     .team-grid { grid-template-columns: repeat(2, 1fr); }
     .contact-grid { grid-template-columns: 1fr; }
@@ -1321,7 +1321,6 @@ h4 { font-size: 1.05rem; font-weight: 700; }
     .section { padding: 3.5rem 0; }
     .hero-content { padding: 5rem 1.5rem 3.5rem; }
     .hero-actions { flex-direction: column; }
-    .invest-grid { grid-template-columns: 1fr; }
     .viz-grid { grid-template-columns: 1fr; }
     .viz-row { grid-template-columns: 1fr; gap: .45rem; }
     .viz-heat { grid-template-columns: 1fr; }
