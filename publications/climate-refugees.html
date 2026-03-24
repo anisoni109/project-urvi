@@ -1,14 +1,174 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <title>Climate Refugees</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Climate Refugees: The World's Forgotten Victims | Project Urvi</title>
+    <meta name="description" content="An examination of climate-induced displacement - who climate refugees are, why they lack legal protection, and how rising sea levels, drought, and extreme weather are driving a growing migration crisis." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../styles.css" />
+    <style>
+        .pub-page { max-width: 740px; margin: 0 auto; padding: 0 2rem 5rem; }
+        .pub-page-header { padding: 5rem 0 3rem; border-bottom: 1px solid var(--border); margin-bottom: 3rem; }
+        .pub-page-header .eyebrow { margin-bottom: 1.25rem; }
+        .pub-page-header h1 { font-size: clamp(1.8rem, 4vw, 2.8rem); margin-bottom: 1.5rem; }
+        .pub-byline { font-size: .85rem; color: var(--text-light); display: flex; flex-wrap: wrap; gap: 1rem; }
+        .pub-byline span { display: flex; align-items: center; gap: .35rem; }
+        .pub-body { font-size: 1.05rem; line-height: 1.85; color: var(--text); }
+        .pub-body h2 { font-size: 1.45rem; margin: 2.75rem 0 1rem; color: var(--dark); }
+        .pub-body p { margin-bottom: 1.25rem; }
+        .pub-body ul { margin: 0 0 1.25rem 1.5rem; list-style: disc; }
+        .pub-body ul li { margin-bottom: .6rem; }
+        .pub-body .callout {
+            background: var(--bg-light);
+            border-left: 3px solid var(--primary);
+            padding: 1.25rem 1.5rem;
+            margin: 2rem 0;
+            border-radius: 0 8px 8px 0;
+            font-size: .95rem;
+            color: var(--text);
+        }
+        .pub-body .callout-warn {
+            background: #fff8f0;
+            border-left: 3px solid #e07c2a;
+            padding: 1.25rem 1.5rem;
+            margin: 2rem 0;
+            border-radius: 0 8px 8px 0;
+            font-size: .95rem;
+            color: var(--text);
+        }
+        .pub-share { margin-top: 3rem; padding-top: 2rem; border-top: 1px solid var(--border); display: flex; align-items: center; justify-content: space-between; gap: 2rem; flex-wrap: wrap; }
+        .pub-share p { font-size: .9rem; color: var(--text-light); margin: 0; }
+    </style>
 </head>
 <body>
-    <h1>Climate Refugees</h1>
-    <p>As climate change accelerates, many people are being displaced from their homes due to rising sea levels, extreme weather events, and other environmental factors.</p>
-    <h2>Case Studies</h2>
-    <p>1. The Maldives: With its low-lying islands, the Maldives is facing existential threats from rising sea levels.</p>
-    <p>2. Bangladesh: Annual flooding displaces millions of people, forcing them to seek refuge elsewhere.</p>
-    <h2>Conclusion</h2>
-    <p>We must take urgent action to mitigate climate change and support those displaced by it.</p>
+
+    <header class="site-header">
+        <div class="container nav-wrap">
+            <a href="../index.html" class="brand">
+                <span class="brand-mark">U</span>
+                <span>
+                    <strong>Project Urvi</strong>
+                    <small>Sustainability Initiative</small>
+                </span>
+            </a>
+            <a href="../index.html" class="btn btn-primary btn-sm" style="margin-left:auto">&#8592; Back to site</a>
+        </div>
+    </header>
+
+    <main>
+        <div class="pub-page">
+            <div class="pub-page-header">
+                <p class="eyebrow">Climate Change &nbsp;&#183;&nbsp; 2024</p>
+                <h1>Climate Refugees: The World's Forgotten Victims</h1>
+                <div class="pub-byline">
+                    <span>Author: <strong>Tanavi Gumma</strong></span>
+                    <span>Editor: <strong>Riya Pawar</strong></span>
+                    <span>Project Urvi &nbsp;&#183;&nbsp; Academia for Sustainable Development</span>
+                </div>
+            </div>
+
+            <div class="pub-body">
+                <h2>Who Are Climate Refugees?</h2>
+                <p>The term "climate refugees" has been used since 1985, when UNEP expert Essam El-Hinnawi defined them - also called climate or environmental migrants - as people who have been <em>"forced to leave their traditional habitat, temporarily or permanently, because of marked environmental disruption."</em> However, the extent of the definition continues to be ambiguous.</p>
+                <p>Under the 1951 Convention Relating to the Status of Refugees, a "refugee" is defined as a person who has crossed an international border owing to a well-founded fear of persecution for reasons of race, religion, nationality, or political opinion. Climate change mostly causes <strong>internal displacement</strong> before escalating to cross-border movement - meaning climate refugees largely fall outside the legal protections afforded to conventional refugees. These people face greater political risks, limited access to human rights protection, and the threat of deportation.</p>
+
+                <div class="article-viz">
+                    <p class="article-viz-title">Climate displacement in numbers</p>
+                    <div class="viz-grid">
+                        <div class="viz-stat"><strong>16.1M</strong><span>people displaced in one recent year by climate-related factors</span></div>
+                        <div class="viz-stat"><strong>150-200M</strong><span>people estimated at risk of displacement by 2050</span></div>
+                        <div class="viz-stat"><strong>500,000</strong><span>people displaced from Bhola Island in Bangladesh</span></div>
+                        <div class="viz-stat"><strong>20M</strong><span>Bangladeshis potentially at risk by 2050</span></div>
+                    </div>
+                </div>
+
+                <div class="article-viz">
+                    <p class="article-viz-title">Displacement hotspot plot</p>
+                    <p class="article-viz-note">Exposure intensity by major displacement pathway. The y-axis shows a comparative exposure score out of 100.</p>
+                    <svg class="viz-plot" viewBox="0 0 640 280" aria-label="Hotspot plot of climate displacement exposure">
+                        <line x1="70" y1="50" x2="600" y2="50" class="viz-gridline" />
+                        <line x1="70" y1="90" x2="600" y2="90" class="viz-gridline" />
+                        <line x1="70" y1="130" x2="600" y2="130" class="viz-gridline" />
+                        <line x1="70" y1="170" x2="600" y2="170" class="viz-gridline" />
+                        <line x1="70" y1="210" x2="600" y2="210" class="viz-axis" />
+                        <line x1="70" y1="30" x2="70" y2="210" class="viz-axis" />
+                        <line x1="145" y1="210" x2="145" y2="66" class="viz-stem" />
+                        <line x1="275" y1="210" x2="275" y2="90" class="viz-stem" />
+                        <line x1="405" y1="210" x2="405" y2="120" class="viz-stem" />
+                        <line x1="535" y1="210" x2="535" y2="132" class="viz-stem" />
+                        <circle cx="145" cy="66" r="8" fill="#d8435f" />
+                        <circle cx="275" cy="90" r="8" fill="#cf6b2e" />
+                        <circle cx="405" cy="120" r="8" fill="#875fd1" />
+                        <circle cx="535" cy="132" r="8" fill="#2d8bcb" />
+                        <text x="26" y="214" class="viz-axis-text">60/100</text>
+                        <text x="26" y="174" class="viz-axis-text">70/100</text>
+                        <text x="26" y="134" class="viz-axis-text">80/100</text>
+                        <text x="26" y="94" class="viz-axis-text">90/100</text>
+                        <text x="145" y="232" class="viz-axis-text" text-anchor="middle">Bangladesh</text>
+                        <text x="275" y="232" class="viz-axis-text" text-anchor="middle">Horn of Africa</text>
+                        <text x="405" y="232" class="viz-axis-text" text-anchor="middle">Island states</text>
+                        <text x="535" y="232" class="viz-axis-text" text-anchor="middle">S. Asian cities</text>
+                        <text x="145" y="54" class="viz-point-label" text-anchor="middle">92</text>
+                        <text x="275" y="78" class="viz-point-label" text-anchor="middle">84</text>
+                        <text x="405" y="108" class="viz-point-label" text-anchor="middle">79</text>
+                        <text x="535" y="120" class="viz-point-label" text-anchor="middle">76</text>
+                        <text x="22" y="28" class="viz-axis-title">EXPOSURE SCORE (/100)</text>
+                        <text x="332" y="258" class="viz-axis-title" text-anchor="middle">HOTSPOT GROUP</text>
+                    </svg>
+                </div>
+
+                <div class="callout-warn">Climate-related migration and displacement is set to be the greatest humanitarian challenge of our era - yet it remains systematically overlooked and underestimated in international policy frameworks.</div>
+
+                <h2>The Scale of the Crisis</h2>
+                <p>Climate-induced displacement is already accelerating. In a single recent year, <strong>16.1 million people</strong> were displaced due to climate-related factors. It is estimated that by 2050, between <strong>150 and 200 million people</strong> will be at risk of being forced to leave their homes as a result of desertification, rising sea levels, and extreme weather conditions.</p>
+                <p>This is not just an issue for fragile states. The changing patterns of human migration mean that more people across the world are forced to flee their communities in search of safe havens. It is the world's most vulnerable people - those least responsible for causing climate change - who bear the heaviest burden and are least equipped to cope with its consequences.</p>
+
+                <h2>The Mechanisms of Displacement</h2>
+                <p>Global warming, primarily caused by burning fossil fuels and deforestation, results in rising temperatures and the melting of glaciers and ice caps. The IPCC predicts a sea-level rise of 0.18 to 0.6 metres between 1990 and 2100, with severe implications for low-lying coastal regions worldwide.</p>
+                <ul>
+                    <li><strong>Bangladesh</strong> - Half the population lives within 5 metres above sea level. Rising seas have already submerged areas like Bhola Island, displacing 500,000 people. A potential loss of 17% of Bangladesh's land by 2050 could force around 20 million climate refugees.</li>
+                    <li><strong>The Maldives</strong> - With its highest point just 2.4 metres above sea level, the nation faces existential threat. Sea-level rise endangers its tourism-dependent economy and has prompted government plans for potential evacuation.</li>
+                    <li><strong>Venice, Italy</strong> - Built on islands in a lagoon, the city experiences increasing flooding that damages infrastructure, cultural sites, and its tourism economy.</li>
+                    <li><strong>Coastal cities globally</strong> - Manhattan, London, Shanghai, Hamburg, Bangkok, Jakarta, Mumbai, Manila, and Buenos Aires are all susceptible to sea-level rise over the coming decades.</li>
+                    <li><strong>Sub-Saharan Africa and the Horn of Africa</strong> - Severe drought forces subsistence farmers to abandon their land. In Kenya and Somalia, worsening droughts, compounded by conflict, drive both internal displacement and cross-border refugee movements.</li>
+                    <li><strong>Inland regions near the Gobi Desert and the Sahara</strong> - Productive land is lost annually to desertification, driving migration to urban centres and intensifying pressure on city infrastructure.</li>
+                </ul>
+
+                <div class="callout">The interplay between climate change, conflict, poverty, and persecution greatly increases the complexity of refugee emergencies. In Somalia, worsening droughts combined with Al-Shabab-related violence drive displacement simultaneously - making it increasingly impossible to separate "climate" from "political" refugees.</div>
+
+                <h2>Health Impacts</h2>
+                <p>The climate crisis is affecting individuals and global public health systems in almost every region of the world. This is particularly evident in rising malnutrition due to droughts and the increasing incidence of water-borne diseases such as cholera due to floods - which negatively affect already weakened health systems, particularly in low- and middle-income countries.</p>
+                <p>Refugees and migrants have specific physical and mental health needs linked to their exposure to climate and environmental conditions. They face significant health risks before, during, and after displacement, with access to primary care and continuity of health services often disrupted by migration, weak health system capacity, financial barriers, and numerous other stressors including abuse and exploitation.</p>
+                <p>Long-term exposure to pollutants from climate-related industrial disruption also compounds chronic disease risks in displaced communities, creating multi-generational public health consequences that are rarely accounted for in displacement statistics.</p>
+
+                <h2>Why the World Must Act</h2>
+                <p>The scale of the challenge demands urgent, coordinated global action. International humanitarian agencies are already overwhelmed, increasingly stretched, and underfunded. If internal displacements that are accelerating today begin turning into large-scale international refugee movements, the geopolitical, humanitarian, and economic consequences will be unprecedented.</p>
+                <p>It is important to understand that change begins from within - efficient policies can only be successfully implemented if individuals, communities, businesses, and governments all contribute. Every person who understands the gravity of the issue, reduces their own footprint, and advocates for climate-responsible policy is part of the solution.</p>
+                <p>We need to take rigorous steps before the displacements that are already happening within countries become irreversible international refugee crises. The people most affected are not the ones who caused this problem. The moral and practical imperative to act has never been clearer.</p>
+
+                <div class="pub-share">
+                    <p>Published by Project Urvi &nbsp;&#183;&nbsp; Academia for Sustainable Development</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <div class="footer-brand">
+                <span class="brand-mark">U</span>
+                <div>
+                    <strong>Project Urvi</strong>
+                    <small>Affiliated with Academia for Sustainable Development</small>
+                </div>
+            </div>
+            <p class="footer-copy">&#169; 2026 Project Urvi. Building a safer and more sustainable world.</p>
+        </div>
+    </footer>
+
+    <script src="../script.js"></script>
 </body>
 </html>
