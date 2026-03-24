@@ -78,7 +78,7 @@ if (navToggle && siteNav) {
 }
 
 // --- Scroll reveal ---
-const revealEls = document.querySelectorAll('.reveal');
+const revealEls = document.querySelectorAll('.reveal, .article-viz');
 if (revealEls.length) {
     const observer = new IntersectionObserver(entries => {
         entries.forEach(entry => {
@@ -189,6 +189,35 @@ if (nlForm) {
         }
     });
 }
+
+// --- Events modal ---
+var eventsModal = document.getElementById('eventsModal');
+var eventsModalClose = document.getElementById('eventsModalClose');
+
+function openEventsModal(e) {
+    e.preventDefault();
+    eventsModal.classList.add('open');
+    eventsModal.setAttribute('aria-hidden', 'false');
+    document.body.style.overflow = 'hidden';
+}
+function closeEventsModal() {
+    eventsModal.classList.remove('open');
+    eventsModal.setAttribute('aria-hidden', 'true');
+    document.body.style.overflow = '';
+}
+
+document.querySelectorAll('.events-modal-trigger').forEach(function (el) {
+    el.addEventListener('click', openEventsModal);
+});
+if (eventsModalClose) eventsModalClose.addEventListener('click', closeEventsModal);
+if (eventsModal) {
+    eventsModal.addEventListener('click', function (e) {
+        if (e.target === eventsModal) closeEventsModal();
+    });
+}
+document.addEventListener('keydown', function (e) {
+    if (e.key === 'Escape' && eventsModal && eventsModal.classList.contains('open')) closeEventsModal();
+});
 
 // --- Lucide icons ---
 if (typeof lucide !== 'undefined') lucide.createIcons();
