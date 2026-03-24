@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Project Urvi | Building a Sustainable World</title>
+    <meta name="description" content="Project Urvi is a sustainability-led initiative driving meaningful action through plastic recycling, sustainability consultancy, market research, and research-backed insights." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header class="site-header">
+        <div class="container nav-wrap">
+            <a href="#home" class="brand">
+                <span class="brand-mark">U</span>
+                <span>
+                    <strong>Project Urvi</strong>
+                    <small>Sustainability Initiative</small>
+                </span>
+            </a>
+            <button class="nav-toggle" aria-label="Open navigation" aria-expanded="false">
+                <span></span><span></span><span></span>
+            </button>
+            <nav class="site-nav">
+                <a href="#mission">Mission</a>
+                <!-- Initiatives dropdown -->
+                <div class="nav-dropdown">
+                    <button class="nav-dropdown-toggle" aria-haspopup="true" aria-expanded="false">
+                        Initiatives <span class="dropdown-arrow">&#9662;</span>
+                    </button>
+                    <div class="nav-dropdown-menu">
+                        <a href="#init-plastic">Plastic Recycling</a>
+                        <a href="initiatives/wastewater-treatment.html">Wastewater Treatment</a>
+                    </div>
+                </div>
+
+                <!-- Services dropdown -->
+                <div class="nav-dropdown">
+                    <button class="nav-dropdown-toggle" aria-haspopup="true" aria-expanded="false">
+                        Services <span class="dropdown-arrow">&#9662;</span>
+                    </button>
+                    <div class="nav-dropdown-menu">
+                        <a href="#svc-consultancy">Sustainability Consultancy</a>
+                        <a href="#svc-research">Market Research</a>
+                        <a href="#svc-circular">Circular Economy Strategy</a>
+                        <a href="#svc-partnership">Partnership Development</a>
+                    </div>
+                </div>
+
+                <!-- Insights dropdown -->
+                <div class="nav-dropdown">
+                    <button class="nav-dropdown-toggle" aria-haspopup="true" aria-expanded="false">
+                        Insights <span class="dropdown-arrow">&#9662;</span>
+                    </button>
+                    <div class="nav-dropdown-menu">
+                        <a href="insights/plastic-rivers-india-2025.html">Plastic Rivers: India 2025</a>
+                        <a href="insights/carbon-emissions-south-asia-2024.html">Carbon Emissions: South Asia 2024</a>
+                        <a href="insights/esg-reporting-gap-south-asia.html">The ESG Reporting Gap</a>
+                        <a href="insights/temperature-anomalies-south-asia.html">Temperature Anomalies (2015-2025)</a>
+                    </div>
+                </div>
+
+                <!-- Publications dropdown -->
+                <div class="nav-dropdown">
+                    <button class="nav-dropdown-toggle" aria-haspopup="true" aria-expanded="false">
+                        Publications <span class="dropdown-arrow">&#9662;</span>
+                    </button>
+                    <div class="nav-dropdown-menu">
+                        <a href="publications/national-green-hydrogen-mission.html">National Green Hydrogen Mission</a>
+                        <a href="publications/green-india-mission.html">Green India Mission</a>
+                        <a href="publications/climate-refugees.html">Climate Refugees</a>
+                    </div>
+                </div>
+                <a href="#events">Events</a>
+                <a href="#team">Team</a>
+                <a href="#contact" class="nav-cta">Contact Us</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+
+        <!-- HERO -->
+        <section class="hero" id="home">
+            <div class="hero-bg-wrap">
+                <img
+                    src="assets/images/hero-bg.jpg"
+                    alt="Lush green nature - sustainability and climate action"
+                    class="hero-bg-img"
+                />
+                <div class="hero-overlay"></div>
+            </div>
+            <div class="container hero-content">
+                <p class="eyebrow eyebrow-light reveal">Climate Change &amp; Global South</p>
+                <h1 class="reveal">We are building a safer,<br>more sustainable world.</h1>
+                <p class="hero-text reveal">
+                    Project Urvi is a research-backed sustainability initiative. We take concrete steps toward a
+                    greener planet - from recovering and supplying recycled plastic to industries, to guiding
+                    businesses through sustainability strategy and market research.
+                </p>
+                <div class="hero-actions reveal">
+                    <a href="#mission" class="btn btn-primary">Our mission</a>
+                    <a href="#insights" class="btn btn-accent">Our insights</a>
+                </div>
+                <div class="hero-tags reveal">
+                    <span>Sustainability First</span>
+                    <span>Plastic Recovery &amp; Supply</span>
+                    <span>Consultancy &amp; Research</span>
+                    <span>Affiliated with Academia for Sustainable Development</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- MISSION -->
+        <section class="section" id="mission">
+            <div class="container mission-grid">
+                <div class="mission-copy reveal">
+                    <p class="eyebrow">Who we are</p>
+                    <h2>Sustainability is not just what we do. It is who we are.</h2>
+                    <p>
+                        Project Urvi was founded on the belief that a safer and more sustainable world is not a distant
+                        ideal - it is something we build through concrete, research-led action today. Every initiative
+                        we take, every service we offer, and every partnership we form is rooted in this commitment.
+                    </p>
+                    <p>
+                        From climate research focused on the Global South to helping businesses rethink their materials
+                        and market strategies, we work across disciplines to drive real, lasting change.
+                    </p>
+
+                </div>
+                <div class="mission-pillars reveal">
+                    <article class="pillar-card">
+                        <div class="pillar-icon-wrap">
+                            <i data-lucide="thermometer" class="pillar-icon-svg"></i>
+                        </div>
+                        <h3>Climate Action</h3>
+                        <p>Research and solutions grounded in the realities of climate change across the Global South.</p>
+                    </article>
+                    <article class="pillar-card">
+                        <div class="pillar-icon-wrap">
+                            <i data-lucide="infinity" class="pillar-icon-svg"></i>
+                        </div>
+                        <h3>Circular Economy</h3>
+                        <p>Turning waste into resource - creating economic value while reducing environmental burden.</p>
+                    </article>
+                    <article class="pillar-card">
+                        <div class="pillar-icon-wrap">
+                            <i data-lucide="building-2" class="pillar-icon-svg"></i>
+                        </div>
+                        <h3>Sustainable Business</h3>
+                        <p>Helping companies transform their operations, sourcing, and strategy for a sustainable future.</p>
+                    </article>
+                    <article class="pillar-card">
+                        <div class="pillar-icon-wrap">
+                            <i data-lucide="sprout" class="pillar-icon-svg"></i>
+                        </div>
+                        <h3>Inclusive Growth</h3>
+                        <p>Ensuring sustainability benefits reach people equitably, especially in underserved communities.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- INITIATIVE -->
+        <section class="section section-dark" id="initiative">
+            <div class="container">
+                <div class="section-heading reveal">
+                    <p class="eyebrow eyebrow-light">Our initiatives</p>
+                    <h2>Translating research into real-world action.</h2>
+                    <p>
+                        We build and operate sustainability programmes that address the most pressing environmental challenges
+                        across South Asia - currently scaling our plastic recycling initiative to recover, process, and supply
+                        recycled materials to industries that need dependable, sustainable inputs.
+                    </p>
+                </div>
+                <div class="initiative-grid">
+                    <div class="initiative-flow reveal">
+                        <div class="init-item" id="init-plastic">
+                            <div class="init-item-header">
+                                <i data-lucide="recycle" class="init-item-icon"></i>
+                                <p class="init-item-title">Plastic Recycling</p>
+                                <span class="init-tab-badge badge-active">Active</span>
+                            </div>
+                            <div class="flow-step">
+                                <span>01</span>
+                                <div>
+                                    <h3>Collect &amp; Sort</h3>
+                                    <p>Plastic waste is systematically collected and sorted into usable material categories.</p>
+                                </div>
+                            </div>
+                            <div class="flow-arrow">&#11015;</div>
+                            <div class="flow-step">
+                                <span>02</span>
+                                <div>
+                                    <h3>Process &amp; Recover</h3>
+                                    <p>Waste is processed into clean, industry-grade recycled plastic material streams.</p>
+                                </div>
+                            </div>
+                            <div class="flow-arrow">&#11015;</div>
+                            <div class="flow-step">
+                                <span>03</span>
+                                <div>
+                                    <h3>Supply to Industry</h3>
+                                    <p>Recycled plastic is supplied to manufacturers, packagers, and industrial buyers.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="initiative-industries reveal">
+                        <div class="init-item-header">
+                            <i data-lucide="factory" class="init-item-icon"></i>
+                            <p class="init-item-title">Industries we supply to</p>
+                        </div>
+                        <ul>
+                            <li>
+                                <strong>Packaging &amp; Consumer Goods</strong>
+                                <span>Increase recycled content and meet sustainability targets.</span>
+                            </li>
+                            <li>
+                                <strong>Manufacturing &amp; Construction</strong>
+                                <span>Cost-effective recycled polymer inputs for industrial and building applications.</span>
+                            </li>
+                            <li>
+                                <strong>Product Makers &amp; Brands</strong>
+                                <span>Support ESG positioning with verified recycled material sourcing.</span>
+                            </li>
+                        </ul>
+                        <a href="#contact" class="btn btn-primary">Enquire about sourcing</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- INVEST -->
+        <section class="section section-invest" id="invest">
+            <div class="container">
+                <div class="section-heading reveal">
+                    <p class="eyebrow eyebrow-light">Why back Project Urvi</p>
+                    <h2>A commercial opportunity with real-world impact.</h2>
+                    <p>
+                        Project Urvi operates at the intersection of sustainability and business viability - building
+                        ventures that generate returns alongside measurable environmental and social outcomes.
+                    </p>
+                </div>
+                <div class="invest-grid">
+                    <article class="invest-card reveal">
+                        <h3>Growing Market</h3>
+                        <p>Demand for recycled materials and sustainable business services is accelerating across India and South Asia, driven by regulation, ESG mandates, and shifting consumer expectations. We are positioned early in a large and underserved market.</p>
+                    </article>
+                    <article class="invest-card reveal">
+                        <h3>Dual Impact</h3>
+                        <p>Capital deployed through Project Urvi creates measurable change across three dimensions - people (livelihoods and health in communities throughout the recycling value chain), animals (less plastic entering rivers, wetlands, and ecosystems that wildlife depend on), and nature (healthier soils, waterways, and forests through reduced plastic pollution and more responsible industry practice).</p>
+                    </article>
+                    <article class="invest-card reveal">
+                        <h3>Use of Investment</h3>
+                        <p>Funds are deployed directly toward expanding plastic recovery operations, building consultancy and research capacity, and developing the infrastructure to serve a growing base of industrial buyers and sustainability clients across industry and government.</p>
+                    </article>
+                </div>
+                <div class="pub-footer reveal">
+                    <p>Interested in backing Project Urvi? We would love to speak with you.</p>
+                    <a href="#contact" class="btn btn-accent">Get in touch</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- SERVICES -->
+        <section class="section section-light" id="services">
+            <div class="container">
+                <div class="section-heading reveal">
+                    <p class="eyebrow">What we offer</p>
+                    <h2>Sustainability consulting and market research for businesses ready to change.</h2>
+                    <p>
+                        Whether you are a business looking to reduce your environmental footprint, an organisation
+                        exploring sustainable markets, or a team seeking research-backed strategy - Project Urvi
+                        has the depth and advisory capability to help you move forward responsibly.
+                    </p>
+                </div>
+                <div class="service-grid">
+                    <article class="service-card reveal" id="svc-consultancy">
+                        <i data-lucide="compass" class="svc-icon"></i>
+                        <h3>Sustainability Consultancy</h3>
+                        <p>We guide organisations on the path to more sustainable operations - covering ESG strategy, responsible sourcing, energy and waste reduction, supply chain reporting, and assessing the commercial viability and real-world impact of sustainability decisions.</p>
+                        <a href="#contact" class="svc-enquire">Enquire &#8599;</a>
+                    </article>
+                    <article class="service-card reveal" id="svc-research">
+                        <i data-lucide="bar-chart-2" class="svc-icon"></i>
+                        <h3>Market Research</h3>
+                        <p>Research-driven insight into green markets, demand trends, policy landscapes, and competitive dynamics in the sustainability space - helping you make evidence-backed decisions.</p>
+                        <a href="#contact" class="svc-enquire">Enquire &#8599;</a>
+                    </article>
+                    <article class="service-card reveal" id="svc-circular">
+                        <i data-lucide="refresh-cw" class="svc-icon"></i>
+                        <h3>Circular Economy Strategy</h3>
+                        <p>Design end-to-end circular sourcing, material recovery, and waste-reduction roadmaps tailored to your business model, industry, and sustainability goals.</p>
+                        <a href="#contact" class="svc-enquire">Enquire &#8599;</a>
+                    </article>
+                    <article class="service-card reveal" id="svc-partnership">
+                        <i data-lucide="users" class="svc-icon"></i>
+                        <h3>Partnership Development</h3>
+                        <p>Connect with the right industry partners, academic institutions, impact investors, and circular supply chain networks to accelerate your sustainability goals.</p>
+                        <a href="#contact" class="svc-enquire">Enquire &#8599;</a>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- INSIGHTS -->
+        <section class="section" id="insights">
+            <div class="container">
+                <div class="section-heading reveal">
+                    <p class="eyebrow">Sustainability insights</p>
+                    <h2>New findings, data, and visualisations from our team.</h2>
+                    <p>
+                        We regularly publish original findings, data analyses, and research-backed perspectives on sustainability,
+                        climate change, and the circular economy across South Asia.
+                    </p>
+                </div>
+                <div class="insights-grid">
+                    <article class="insight-card reveal">
+                        <div class="insight-meta">
+                            <span class="insight-tag">Data &amp; Visualisation</span>
+                            <span class="insight-date">March 2026</span>
+                        </div>
+                        <h3>Plastic Pollution in India's Rivers: A 2025 Data Snapshot</h3>
+                        <p>An analysis of plastic load data across 14 major Indian river systems in 2025, with interactive maps showing concentration hotspots and seasonal variation.</p>
+                        <a href="insights/plastic-rivers-india-2025.html" class="insight-link">Read article &#8599;</a>
+                    </article>
+                    <article class="insight-card reveal">
+                        <div class="insight-meta">
+                            <span class="insight-tag">Visualisation</span>
+                            <span class="insight-date">February 2026</span>
+                        </div>
+                        <h3>Visualising Carbon Emissions by Sector: South Asia 2024</h3>
+                        <p>A sector-by-sector breakdown of carbon emissions across South Asia in 2024, with comparative charts showing which industries are accelerating and which are improving.</p>
+                        <a href="insights/carbon-emissions-south-asia-2024.html" class="insight-link">Read article &#8599;</a>
+                    </article>
+                    <article class="insight-card reveal">
+                        <div class="insight-meta">
+                            <span class="insight-tag">Research Finding</span>
+                            <span class="insight-date">January 2026</span>
+                        </div>
+                        <h3>The ESG Reporting Gap: What Companies in South Asia Are Missing</h3>
+                        <p>Our review of 200+ corporate ESG disclosures reveals systemic gaps in supply chain transparency, Scope 3 emissions, and social impact measurement across South Asian companies.</p>
+                        <a href="insights/esg-reporting-gap-south-asia.html" class="insight-link">Read article &#8599;</a>
+                    </article>
+                    <article class="insight-card reveal">
+                        <div class="insight-meta">
+                            <span class="insight-tag">Climate Data</span>
+                            <span class="insight-date">December 2025</span>
+                        </div>
+                        <h3>Temperature Anomalies in South Asia: A Decade of Change (2015-2025)</h3>
+                        <p>Ten years of temperature anomaly data across South Asia visualised by region - showing which areas have warmed fastest and what it means for climate-vulnerable populations.</p>
+                        <a href="insights/temperature-anomalies-south-asia.html" class="insight-link">Read article &#8599;</a>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- PUBLICATIONS -->
+        <section class="section section-light" id="publications">
+            <div class="container">
+                <div class="section-heading reveal">
+                    <p class="eyebrow">Research &amp; publications</p>
+                    <h2>Knowledge that drives sustainable action.</h2>
+                    <p>
+                        Our team conducts and publishes research on climate change, circular economy, sustainability
+                        policy, and the Global South. Below are selected works from our founders and researchers.
+                    </p>
+                </div>
+                <div class="pub-grid">
+                    <article class="pub-card reveal">
+                        <div class="pub-meta">
+                            <span class="pub-tag">Energy Policy</span>
+                            <span class="pub-year">2024</span>
+                        </div>
+                        <h3>National Green Hydrogen Mission</h3>
+                        <p class="pub-authors">Mohit Kumar &nbsp;&#183;&nbsp; <span style="font-weight:400;color:var(--text-light)">Ed. Riya Pawar</span></p>
+                        <p class="pub-abstract">A policy analysis of India's National Green Hydrogen Mission - examining its goals to produce 5 MMT of green hydrogen annually by 2030, decarbonise hard-to-abate sectors, and position India as a global clean energy hub, alongside key implementation challenges and prospects.</p>
+                        <a href="publications/national-green-hydrogen-mission.html" class="pub-link">Read publication &#8599;</a>
+                    </article>
+                    <article class="pub-card reveal">
+                        <div class="pub-meta">
+                            <span class="pub-tag">Climate Policy</span>
+                            <span class="pub-year">2024</span>
+                        </div>
+                        <h3>Green India Mission</h3>
+                        <p class="pub-authors">Soham Chakraborty &nbsp;&#183;&nbsp; <span style="font-weight:400;color:var(--text-light)">Ed. Riya Pawar</span></p>
+                        <p class="pub-abstract">An evaluation of India's National Mission for a Green India (GIM) under the NAPCC - assessing its achievements in forest cover expansion, community-led forest management, and biodiversity conservation, alongside persistent challenges in implementation and ecological quality.</p>
+                        <a href="publications/green-india-mission.html" class="pub-link">Read publication &#8599;</a>
+                    </article>
+                    <article class="pub-card reveal">
+                        <div class="pub-meta">
+                            <span class="pub-tag">Climate Change</span>
+                            <span class="pub-year">2024</span>
+                        </div>
+                        <h3>Climate Refugees: The World's Forgotten Victims</h3>
+                        <p class="pub-authors">Tanavi Gumma &nbsp;&#183;&nbsp; <span style="font-weight:400;color:var(--text-light)">Ed. Riya Pawar</span></p>
+                        <p class="pub-abstract">An examination of climate-induced displacement - who climate refugees are, why they lack legal protection under international law, and how rising sea levels, drought, and extreme weather are driving an accelerating migration crisis that could displace 150-200 million people by 2050.</p>
+                        <a href="publications/climate-refugees.html" class="pub-link">Read publication &#8599;</a>
+                    </article>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- EVENTS + NEWSLETTER -->
+        <section class="section" id="events">
+            <div class="container">
+                <div class="section-heading reveal">
+                    <p class="eyebrow">Events</p>
+                    <h2>Where we convene, share, and build.</h2>
+                    <p>
+                        Project Urvi will be hosting workshops, roundtables, and seminars focused on sustainability,
+                        circular economy, and climate action. We are currently planning our events programme.
+                    </p>
+                </div>
+
+                <div class="events-staytune reveal">
+                    <p>We do not have any scheduled events at this time. We will be announcing our upcoming programme shortly &#8212; including workshops, roundtables, and community seminars. Subscribe to our newsletter below to be the first to know.</p>
+                </div>
+
+                <!-- NEWSLETTER inside Events -->
+                <div class="events-newsletter reveal">
+                    <div class="events-newsletter-copy">
+                        <p class="eyebrow">Stay informed</p>
+                        <h3>Subscribe to our newsletter</h3>
+                        <p>Regular updates on sustainability trends, circular economy insights, climate policy developments, and Project Urvi's latest work - directly in your inbox.</p>
+                    </div>
+                    <form class="nl-form" id="nlForm">
+                        <input type="hidden" name="access_key" value="0de769dc-fae8-4c2f-9150-11a1c44ba728" />
+                        <input type="hidden" name="subject" value="New newsletter subscriber - Project Urvi" />
+                        <input type="hidden" name="from_name" value="Project Urvi Website" />
+                        <div class="nl-input-wrap">
+                            <input type="email" name="email" placeholder="Enter your email address" required />
+                            <button type="submit" class="btn btn-primary">Subscribe</button>
+                        </div>
+                        <p class="nl-note">No spam. Unsubscribe any time.</p>
+                        <div class="form-success" id="nlSuccess" style="display:none">
+                            You are subscribed! Thank you for joining.
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- TEAM -->
+        <section class="section section-light" id="team">
+            <div class="container">
+                <div class="section-heading reveal">
+                    <p class="eyebrow">The people behind it</p>
+                    <h2>Our team</h2>
+                    <p>Affiliated with Academia for Sustainable Development, Project Urvi is driven by a passionate team of founders and researchers committed to meaningful sustainability action.</p>
+                </div>
+
+                <h3 class="team-subheading reveal">Founding Members</h3>
+                <div class="team-grid">
+                    <article class="team-card reveal">
+                        <div class="team-photo-wrap">
+                            <img src="assets/images/team-riya.jpg" alt="Riya Pawar" />
+                        </div>
+                        <h4>Riya Pawar</h4>
+                        <p class="team-role">Founder</p>
+                        <a href="https://www.linkedin.com/in/riya-pawar-354469234/" target="_blank" rel="noreferrer" class="team-linkedin">LinkedIn &#8599;</a>
+                    </article>
+                    <article class="team-card reveal">
+                        <div class="team-photo-wrap">
+                            <img src="assets/images/team-samriddhi.jpg" alt="Samriddhi Sharma" />
+                        </div>
+                        <h4>Samriddhi Sharma</h4>
+                        <p class="team-role">Founder</p>
+                        <a href="https://www.linkedin.com/in/samriddhi-sharma-b778a2202/" target="_blank" rel="noreferrer" class="team-linkedin">LinkedIn &#8599;</a>
+                    </article>
+                    <article class="team-card reveal">
+                        <div class="team-photo-wrap">
+                            <img src="https://lh3.googleusercontent.com/sitesv/APaQ0SRNJxJjfIt0RR8OCUD3UaADdnP8doiwNITMBqwHMfApuV7U_FMErYH8Zd6GQY7FxW5NqOIdGM7PmdkjiCQV5X8adSG9pfCKpYWZAA-gAiZn-6MqivlcgcYNXNxd7ayCIEYri_HDO_fEDbHySYR6vdCeBkBZmEXiK6Xtukff2FiHXydLSJVSCd2BtbnfQCgqWCkdmQcqg6CgsyGSVlqeqOqSHPiA2j0eNC8m=w1280" alt="Abhiniti Gupta" onerror="this.parentElement.classList.add('team-photo-placeholder'); this.style.display='none'; this.parentElement.innerHTML='<span>A</span>';" />
+                        </div>
+                        <h4>Abhiniti Gupta</h4>
+                        <p class="team-role">Founder</p>
+                        <a href="https://www.linkedin.com/in/abhiniti-gupta-0534821aa/" target="_blank" rel="noreferrer" class="team-linkedin">LinkedIn &#8599;</a>
+                    </article>
+                    <article class="team-card reveal">
+                        <div class="team-photo-wrap">
+                            <img src="assets/images/team-isha.jpg" alt="Isha Waghmare" />
+                        </div>
+                        <h4>Isha Waghmare</h4>
+                        <p class="team-role">Co-Founder</p>
+                        <a href="https://www.linkedin.com/in/isha-waghmare-755b53252/" target="_blank" rel="noreferrer" class="team-linkedin">LinkedIn &#8599;</a>
+                    </article>
+                </div>
+
+                <h3 class="team-subheading reveal" style="margin-top:3rem">Researchers - First Cohort</h3>
+                <div class="team-grid team-grid-sm">
+                    <article class="team-card reveal">
+                        <div class="team-photo-wrap">
+                            <img src="assets/images/team-mohit.jpg" alt="Mohit Kumar" />
+                        </div>
+                        <h4>Mohit Kumar</h4>
+                        <p class="team-role">Researcher</p>
+                        <a href="https://www.linkedin.com/in/mohit-kumar-674677272" target="_blank" rel="noreferrer" class="team-linkedin">LinkedIn &#8599;</a>
+                    </article>
+                    <article class="team-card reveal">
+                        <div class="team-photo-wrap team-photo-placeholder">
+                            <span>S</span>
+                        </div>
+                        <h4>Soham Chakroborty</h4>
+                        <p class="team-role">Researcher</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTACT -->
+        <section class="section" id="contact">
+            <div class="container contact-grid">
+                <div class="contact-copy reveal">
+                    <p class="eyebrow">Get in touch</p>
+                    <h2>Let's build something sustainable together.</h2>
+                    <p>
+                        Whether you are a business looking to source recycled plastic, a company that wants to become
+                        more sustainable, or an individual with a question - we would love to hear from you.
+                    </p>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <span class="contact-label">Email</span>
+                            <a href="mailto:urvi.initiative@gmail.com">urvi.initiative@gmail.com</a>
+                        </div>
+                        <div class="contact-item">
+                            <span class="contact-label">Phone</span>
+                            <a href="tel:+917620642458">+91 76206 42458</a>
+                        </div>
+                        <div class="contact-item">
+                            <span class="contact-label">LinkedIn</span>
+                            <a href="https://www.linkedin.com/company/project-urvi/" target="_blank" rel="noreferrer">Project Urvi &#8599;</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-form-wrap reveal">
+                    <!-- Form submits via Web3Forms - get your free key at web3forms.com -->
+                    <form class="contact-form" id="contactForm">
+                        <!-- Replace YOUR_ACCESS_KEY below with the key emailed to you from web3forms.com -->
+                        <input type="hidden" name="access_key" value="0de769dc-fae8-4c2f-9150-11a1c44ba728" />
+                        <input type="hidden" name="subject" value="New enquiry from Project Urvi website" />
+                        <input type="hidden" name="from_name" value="Project Urvi Website" />
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="name">Your name</label>
+                                <input type="text" id="name" name="name" placeholder="Full name" required />
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email address</label>
+                                <input type="email" id="email" name="email" placeholder="you@company.com" required />
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="organisation">Organisation (optional)</label>
+                            <input type="text" id="organisation" name="organisation" placeholder="Your company or institution" />
+                        </div>
+
+                        <div class="form-group">
+                            <label for="interest">I am interested in</label>
+                            <select id="interest" name="interest" required>
+                                <option value="" disabled selected>Select an option</option>
+                                <option value="Recycled plastic supply">Recycled plastic supply</option>
+                                <option value="Sustainability consultancy">Sustainability consultancy</option>
+                                <option value="Market research">Market research</option>
+                                <option value="Circular economy strategy">Circular economy strategy</option>
+                                <option value="Feasibility study">Feasibility &amp; Impact Study</option>
+                                <option value="Partnership">Partnership / Collaboration</option>
+                                <option value="Publication request">Publication request</option>
+                                <option value="Event registration">Event registration</option>
+                                <option value="Other">Other</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Your message</label>
+                            <textarea id="message" name="message" rows="5" placeholder="Tell us about your needs or ask us anything..." required></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary btn-full">Send message</button>
+
+                        <div class="form-success" id="formSuccess" style="display:none">
+                            Thank you! Your message has been sent. We will be in touch soon.
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <div class="footer-brand">
+                <span class="brand-mark">U</span>
+                <div>
+                    <strong>Project Urvi</strong>
+                    <small>Affiliated with Academia for Sustainable Development</small>
+                </div>
+            </div>
+            <nav class="footer-nav">
+                <a href="#mission">Mission</a>
+                <a href="#initiative">Initiatives</a>
+                <a href="#services">Services</a>
+                <a href="#publications">Publications</a>
+                <a href="#events">Events</a>
+                <a href="#insights">Insights</a>
+                <a href="#team">Team</a>
+                <a href="#contact">Contact</a>
+            </nav>
+            <p class="footer-copy">&#169; 2026 Project Urvi. Building a safer and more sustainable world.</p>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

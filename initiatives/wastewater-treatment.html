@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wastewater Treatment Initiative | Project Urvi</title>
+    <meta name="description" content="Project Urvi is developing scalable wastewater treatment solutions for South Asia - where over 70% of wastewater flows untreated into rivers and groundwater." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../styles.css" />
+    <style>
+        .init-page { max-width: 800px; margin: 0 auto; padding: 0 2rem 5rem; }
+        .init-page-header { padding: 5rem 0 3rem; border-bottom: 1px solid var(--border); margin-bottom: 3rem; }
+        .init-page-header .eyebrow { margin-bottom: 1.25rem; }
+        .init-page-header h1 { font-size: clamp(1.8rem, 4vw, 2.8rem); margin-bottom: 1.25rem; }
+        .init-byline { font-size: .85rem; color: var(--text-light); }
+        .init-body { font-size: 1.05rem; line-height: 1.85; color: var(--text); }
+        .init-body h2 { font-size: 1.45rem; margin: 2.75rem 0 1rem; color: var(--dark); }
+        .init-body h3 { font-size: 1.15rem; margin: 2rem 0 .75rem; color: var(--dark); }
+        .init-body p  { margin-bottom: 1.25rem; }
+        .init-body ul { margin: 0 0 1.25rem 1.5rem; list-style: disc; }
+        .init-body ul li { margin-bottom: .5rem; }
+        .init-body .callout {
+            background: var(--bg-light);
+            border-left: 3px solid var(--primary);
+            padding: 1.25rem 1.5rem;
+            margin: 2rem 0;
+            border-radius: 0 8px 8px 0;
+            font-size: .95rem;
+            color: var(--text);
+        }
+        .init-body .callout-warn {
+            background: #fff8f0;
+            border-left: 3px solid #e07c2a;
+            padding: 1.25rem 1.5rem;
+            margin: 2rem 0;
+            border-radius: 0 8px 8px 0;
+            font-size: .95rem;
+            color: var(--text);
+        }
+        .init-body .data-note {
+            font-size: .82rem;
+            color: var(--text-light);
+            font-style: italic;
+            margin-top: -.75rem;
+            margin-bottom: 1.25rem;
+        }
+        .init-back { display: inline-flex; align-items: center; gap: .4rem; font-size: .85rem; font-weight: 600; color: var(--primary); margin-bottom: 2rem; }
+        .init-back:hover { opacity: .75; }
+
+        /* Stat grid */
+        .stat-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1.25rem;
+            margin: 2.25rem 0;
+        }
+        .stat-card {
+            background: var(--bg-light);
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+            padding: 1.5rem 1.25rem;
+            text-align: center;
+        }
+        .stat-number {
+            font-size: 2rem;
+            font-weight: 800;
+            color: var(--primary);
+            line-height: 1.1;
+            margin-bottom: .4rem;
+        }
+        .stat-label {
+            font-size: .8rem;
+            color: var(--text-light);
+            line-height: 1.45;
+        }
+
+        /* Cost table */
+        .cost-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1.75rem 0 2rem;
+            font-size: .92rem;
+        }
+        .cost-table thead tr { background: var(--bg-light); }
+        .cost-table th {
+            padding: .75rem 1rem;
+            text-align: left;
+            font-weight: 700;
+            color: var(--dark);
+            border-bottom: 2px solid var(--border);
+        }
+        .cost-table td {
+            padding: .75rem 1rem;
+            border-bottom: 1px solid var(--border);
+            color: var(--text);
+            vertical-align: top;
+        }
+        .cost-table tbody tr:last-child td { border-bottom: none; }
+        .cost-table tbody tr:hover td { background: var(--bg-light); }
+
+        /* Contact strip */
+        .init-contact {
+            margin-top: 3rem;
+            padding: 2rem;
+            background: var(--bg-light);
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 2rem;
+            flex-wrap: wrap;
+        }
+        .init-contact p { margin: 0; font-size: .95rem; color: var(--text); }
+        .init-contact strong { display: block; margin-bottom: .3rem; font-size: 1rem; }
+
+        @media (max-width: 640px) {
+            .stat-grid { grid-template-columns: 1fr 1fr; }
+            .cost-table { font-size: .82rem; }
+            .cost-table th, .cost-table td { padding: .6rem .75rem; }
+            .init-contact { flex-direction: column; align-items: flex-start; }
+        }
+        @media (max-width: 400px) {
+            .stat-grid { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+
+    <header class="site-header">
+        <div class="container nav-wrap">
+            <a href="../index.html" class="brand">
+                <span class="brand-mark">U</span>
+                <span>
+                    <strong>Project Urvi</strong>
+                    <small>Sustainability Initiative</small>
+                </span>
+            </a>
+            <a href="../index.html#initiative" class="btn btn-primary btn-sm" style="margin-left:auto">&#8592; Our Initiatives</a>
+        </div>
+    </header>
+
+    <main>
+        <div class="init-page">
+            <div class="init-page-header">
+                <p class="eyebrow">Initiative &nbsp;&#183;&nbsp; Coming Soon</p>
+                <h1>Wastewater Treatment</h1>
+                <p class="init-byline">Project Urvi &nbsp;&#183;&nbsp; South Asia Focus</p>
+            </div>
+
+            <div class="init-body">
+                <a href="../index.html#initiative" class="init-back">&#8592; Back to Initiatives</a>
+
+                <p>South Asia faces one of the world's most severe wastewater crises - largely invisible, largely ignored. Across the region, the vast majority of domestic, industrial, and agricultural wastewater is discharged untreated into rivers, lakes, and soil, with cascading consequences for human health, ecosystems, agricultural productivity, and economic resilience.</p>
+                <p>Project Urvi is actively developing a wastewater treatment initiative to address this gap - building accessible, scalable treatment solutions for industrial facilities and communities across South Asia. This page outlines the scale of the problem, the real costs involved, and what we intend to do about it.</p>
+
+                <h2>The scale of the crisis</h2>
+                <p>The numbers are stark. South Asia generates an estimated 63 billion litres of wastewater every single day. Of that, treatment capacity across the region handles only a fraction - the rest flows directly into waterways and ground systems with little or no treatment at all.</p>
+
+                <div class="stat-grid">
+                    <div class="stat-card">
+                        <div class="stat-number">73%</div>
+                        <div class="stat-label">of wastewater in South Asia flows untreated into water bodies</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">63B L</div>
+                        <div class="stat-label">litres of wastewater generated across South Asia every day</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">1 in 3</div>
+                        <div class="stat-label">people in the region lack access to safely managed sanitation</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">80%</div>
+                        <div class="stat-label">of India's river pollution originates from untreated sewage</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">$9B+</div>
+                        <div class="stat-label">estimated annual economic loss from waterborne disease in South Asia</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">500M+</div>
+                        <div class="stat-label">people rely on groundwater sources already contaminated by wastewater leachate</div>
+                    </div>
+                </div>
+
+                <p class="data-note">Sources: WHO/UNICEF JMP 2023; CPCB India Annual Report 2024; World Bank Water and Sanitation Data; UNEP South Asia Regional Assessment 2023.</p>
+
+                <div class="callout-warn">India alone has a treatment gap of over 36,000 million litres per day (MLD) - the difference between the wastewater generated by cities and towns and the capacity of installed treatment plants, many of which operate well below their rated capacity.</div>
+
+                <h2>Who is most affected</h2>
+                <p>The burden of untreated wastewater does not fall equally. The communities closest to industrial discharge points, informal settlements without sewage infrastructure, farmers using wastewater-irrigated land, and children in areas with contaminated drinking water bear the highest costs - while contributing least to the problem.</p>
+                <ul>
+                    <li><strong>Urban informal settlements</strong> - 40-60% of India's urban population lives in areas not connected to formal sewerage networks.</li>
+                    <li><strong>Farmers and agriculture</strong> - An estimated 73% of the wastewater that reaches rivers is eventually used for irrigation, transferring contaminants directly into the food supply.</li>
+                    <li><strong>Rural groundwater users</strong> - Leachate from open drains and unlined pits contaminates shallow aquifers that 500 million+ people depend on for drinking water.</li>
+                    <li><strong>Industrial workers and downstream communities</strong> - Textile, tannery, pharmaceutical, and food-processing effluents are among the most toxic and least treated streams across the region.</li>
+                </ul>
+
+                <h2>Health and environmental impacts</h2>
+
+                <h3>Human health</h3>
+                <p>Contaminated water is among the leading causes of disease burden in South Asia. Waterborne diseases including cholera, typhoid, dysentery, and hepatitis A account for hundreds of thousands of deaths annually - the majority preventable through adequate treatment infrastructure. Children under five are disproportionately affected: diarrhoeal disease linked to unsafe water and sanitation remains one of the top causes of under-five mortality in the region.</p>
+                <p>Beyond acute illness, long-term exposure to industrial wastewater - carrying heavy metals such as lead, arsenic, chromium, and mercury - is linked to chronic kidney disease, neurological damage, elevated cancer risk, and reproductive harm in affected communities.</p>
+
+                <h3>Freshwater ecosystems</h3>
+                <p>South Asia's river systems are among the most biodiverse in the world - and among the most degraded. Biological Oxygen Demand (BOD) and Chemical Oxygen Demand (COD) levels in rivers receiving untreated discharge routinely exceed safe limits by 5-10x, destroying aquatic life, generating algal blooms, and rendering stretches of some of India's most sacred rivers biologically dead for much of the year.</p>
+
+                <div class="callout">BOD levels in the Yamuna in Delhi average 20-30 mg/L during dry months - against a safe threshold of 3 mg/L. This renders the water unsuitable for aquatic life, agriculture, and any direct human use.</div>
+
+                <h3>Agriculture and food security</h3>
+                <p>With freshwater scarcity intensifying across the region, wastewater reuse for irrigation is growing - often without treatment. Studies across India, Bangladesh, and Pakistan have detected elevated concentrations of pathogens, heavy metals, and pharmaceutical residues in crops irrigated with untreated effluent, raising serious food safety concerns for domestic consumption and export markets.</p>
+
+                <h2>The cost of treatment</h2>
+                <p>One of the most persistent barriers to scaling wastewater treatment is the perception that it is prohibitively expensive. The reality is more nuanced: treatment costs vary widely by technology, scale, and target use for treated water - and in many scenarios, proper treatment pays for itself through resource recovery, reduced disease burden, and compliance savings.</p>
+
+                <table class="cost-table">
+                    <thead>
+                        <tr>
+                            <th>Treatment Technology</th>
+                            <th>Typical Scale</th>
+                            <th>Capex (USD/m³/day)</th>
+                            <th>Opex (USD/m³ treated)</th>
+                            <th>Output Quality</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Activated Sludge Process (ASP)</td>
+                            <td>Municipal / Large industrial</td>
+                            <td>$300-$600</td>
+                            <td>$0.15-$0.30</td>
+                            <td>Secondary (BOD &lt;30 mg/L)</td>
+                        </tr>
+                        <tr>
+                            <td>Sequential Batch Reactor (SBR)</td>
+                            <td>Small-medium municipal</td>
+                            <td>$400-$700</td>
+                            <td>$0.12-$0.25</td>
+                            <td>Secondary - Tertiary</td>
+                        </tr>
+                        <tr>
+                            <td>Moving Bed Biofilm Reactor (MBBR)</td>
+                            <td>Industrial / Decentralised</td>
+                            <td>$250-$500</td>
+                            <td>$0.10-$0.22</td>
+                            <td>Secondary (BOD &lt;20 mg/L)</td>
+                        </tr>
+                        <tr>
+                            <td>Constructed Wetlands</td>
+                            <td>Community / Peri-urban</td>
+                            <td>$50-$200</td>
+                            <td>$0.02-$0.08</td>
+                            <td>Secondary (low-intensity)</td>
+                        </tr>
+                        <tr>
+                            <td>Membrane Bioreactor (MBR)</td>
+                            <td>High-value reuse</td>
+                            <td>$600-$1,200</td>
+                            <td>$0.25-$0.50</td>
+                            <td>Tertiary (reuse-grade)</td>
+                        </tr>
+                        <tr>
+                            <td>Decentralised Package Plants</td>
+                            <td>Small communities / Clusters</td>
+                            <td>$100-$350</td>
+                            <td>$0.08-$0.20</td>
+                            <td>Secondary</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p class="data-note">Estimates based on South Asian project data (India, Bangladesh, Sri Lanka), TERI and CPCB benchmarks, and World Bank infrastructure cost databases. Costs vary significantly by site conditions, local material costs, and energy tariffs.</p>
+
+                <p>For context: treating one litre of municipal wastewater to secondary standard costs approximately 0.10 to 0.20 US cents in a well-run Indian facility. The cost of not treating it - in healthcare, lost agricultural productivity, ecosystem damage, and declining groundwater quality - is estimated to be 5 to 10 times higher over a 10-year horizon.</p>
+
+                <h3>Where costs can be recovered</h3>
+                <p>Treated wastewater is not a waste product - it is a resource. Reuse pathways that offset treatment costs include:</p>
+                <ul>
+                    <li><strong>Irrigation water sale</strong> - Tertiary-treated effluent commands a market price of INR 5-15 per kilolitre in water-scarce industrial zones.</li>
+                    <li><strong>Industrial process water</strong> - Cooling towers, boiler feed, and cleaning operations can use treated municipal water, reducing freshwater draw.</li>
+                    <li><strong>Biogas from sludge digestion</strong> - Sewage sludge anaerobic digestion generates biogas that can cover 30-60% of a plant's energy demand.</li>
+                    <li><strong>Nutrient recovery</strong> - Phosphorus and nitrogen recovered from sludge have direct fertiliser value, increasingly relevant as global phosphate reserves deplete.</li>
+                </ul>
+
+                <h2>Project Urvi's approach</h2>
+                <p>We are building this initiative from first principles - starting with rigorous mapping of underserved industrial clusters and peri-urban communities where wastewater treatment is absent or failing, and where intervention can generate the greatest combined environmental and economic return.</p>
+                <p>Our model will focus on:</p>
+                <ul>
+                    <li><strong>Decentralised solutions</strong> - Right-sized plants for industrial clusters and community-level deployments, avoiding the capital and governance overhead of mega-infrastructure.</li>
+                    <li><strong>Resource recovery integration</strong> - Every facility designed from the outset to recover treated water, biogas, and nutrients - making operations economically self-sustaining over time.</li>
+                    <li><strong>Local capacity building</strong> - Training and employing local operators, building long-term institutional knowledge in the communities we serve.</li>
+                    <li><strong>Research-backed site selection</strong> - Using water quality data, population and industry mapping, and disease burden data to identify and prioritise intervention locations.</li>
+                </ul>
+
+                <div class="callout">Our target: develop and commission the first pilot facility within 18 months of programme launch, with a replicable operating model that can be deployed across 10+ sites within five years.</div>
+
+                <h2>Get involved</h2>
+                <p>We are currently in the research and development phase - building the evidence base, identifying pilot sites, and speaking with potential partners, funders, and technical collaborators. If your organisation operates in this space, or if you are interested in backing this initiative, we would welcome a conversation.</p>
+
+                <div class="init-contact">
+                    <div>
+                        <strong>Express interest or request a briefing</strong>
+                        <p>Reach out to the Project Urvi team directly to discuss the wastewater treatment initiative.</p>
+                    </div>
+                    <a href="../index.html#contact" class="btn btn-primary">Contact us &#8599;</a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <div class="footer-brand">
+                <span class="brand-mark">U</span>
+                <div>
+                    <strong>Project Urvi</strong>
+                    <small>Affiliated with Academia for Sustainable Development</small>
+                </div>
+            </div>
+            <p class="footer-copy">&#169; 2026 Project Urvi. Building a safer and more sustainable world.</p>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+    <script>if (typeof lucide !== 'undefined') lucide.createIcons();</script>
+</body>
+</html>
